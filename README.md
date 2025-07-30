@@ -22,13 +22,13 @@
 | `lambda/`     | Contains log processing Lambda code  |
 | `glue/`       | Glue crawler + job documentation     |
 | `athena/`     | SQL queries for log analysis         |
-| `diagrams/`   | Architecture diagrams (PNG or drawio)|
+| `diagrams/`   | Architecture diagrams                |
 
 ---
 
 
 ## 🛠 Tools & Services Used
-
+    
 - AWS Lambda
 - CloudWatch Logs
 - S3
