@@ -1,4 +1,3 @@
-# Serverless-log-analyzer-aws
 # Serverless Log Analyzer (AWS)
 
  A fully serverless log analysis project to collect logs from AWS Lambda, store them in S3, and analyze using Glue + Athena.
@@ -27,7 +26,7 @@
 ---
 
 
-## 🛠 Tools & Services Used
+##  Tools & Services Used
     
 - AWS Lambda
 - CloudWatch Logs
