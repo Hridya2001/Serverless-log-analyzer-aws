@@ -69,10 +69,11 @@ Serverless Log Analyzer is a real-time log processing pipeline built using AWS s
 
 ##  Setup Instructions
 
-### 1. Create Lambda Function: `my-function.py`
+### 1.  Create Lambda Function: `my-function.py`
 
-- Generates dummy logs
-- Attach IAM Role:
+Generates dummy logs with different severity levels.
+
+#### IAM Permissions
 
 ```json
 {
@@ -84,10 +85,11 @@ Serverless Log Analyzer is a real-time log processing pipeline built using AWS s
   ],
   "Resource": "*"
 }
+```
 
 ---
 
-### 2. View Logs in CloudWatch
+### 2.  View Logs in CloudWatch
 
 - Navigate to **CloudWatch** → **Logs**
 - Select log group:  
@@ -95,7 +97,7 @@ Serverless Log Analyzer is a real-time log processing pipeline built using AWS s
 
 ---
 
-### 3.Create Primary S3 Bucket for Logs
+### 3.  Create Primary S3 Bucket for Logs
 
 - **Bucket Name**: `log-analyzer-hridya`
 - **Purpose**: Stores logs in structured folders
