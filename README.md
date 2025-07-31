@@ -85,3 +85,23 @@ Serverless Log Analyzer is a real-time log processing pipeline built using AWS s
   "Resource": "*"
 }
 
+---
+
+### 2. View Logs in CloudWatch
+
+- Navigate to **CloudWatch** → **Logs**
+- Select log group:  
+  `/aws/lambda/my-function`
+
+---
+
+### 3.Create Primary S3 Bucket for Logs
+
+- **Bucket Name**: `log-analyzer-hridya`
+- **Purpose**: Stores logs in structured folders
+- **Folder Structure**:
+  ```
+  /logs/YYYY/MM/DD/
+  ```
+
+---
