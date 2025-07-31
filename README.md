@@ -1,8 +1,8 @@
 # Log Monitoring Pipeline using AWS
 
-This project demonstrates how to build and deploy a CloudWatch Log Monitoring Pipeline using AWS services. The pipeline generates logs from a Lambda function, stores them in Amazon S3, makes them queryable with Athena, and sends alerts using SNS based on custom thresholds.
----
+This project demonstrates how to build and deploy a ClodWatch Log Monitoring pipeline using AWS services. the pipeline generates and captures logs from a lambda function, stores them in Amazon S3, make queriable with Athena, and send alerts using SNS based on custom thresholds.
 
+---
 ## Features
 
 - Collects Lambda logs via CloudWatch subscription
