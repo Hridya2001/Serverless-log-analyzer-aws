@@ -92,7 +92,7 @@ Generates dummy logs with different severity levels.
 }
 ```
 
----
+
 
 ### 2.  View Logs in CloudWatch
 
