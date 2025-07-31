@@ -132,7 +132,7 @@ Add **subscription filter** in CloudWatch → Target: `log-shipper`
 
 - Source: `s3://log-analyzer-hridya/logs/`
 - Output: Database `log_analysis_db`
-
+- Creates a **Glue Data Catalog Table** (e.g., `logs_json`)
 #### IAM Role
 
 ```json
@@ -142,3 +142,16 @@ Add **subscription filter** in CloudWatch → Target: `log-shipper`
   "Resource": "*"
 }
 ```
+
+---
+
+
+### 6.  Query Using Athena
+
+- Result output location: `s3://log-analyzer-hridya/athena-results/`
+- You can find sample Athena queries in [`athena_queries.sql`](src/athena_queries.sql)
+
+
+
+
+
