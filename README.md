@@ -230,6 +230,3 @@ The core strengths of this architecture include its serverless nature, structure
 This setup can be extended with enhancements such as scheduled log generation using EventBridge, visualizing log data using Amazon QuickSight, integrating alerts with external tools like Slack or PagerDuty, and aggregating logs from multiple Lambda functions or services. Overall, it offers a scalable foundation for building cost-effective and insightful monitoring solutions with minimal operational overhead.
 
 ---
-It serves as a solid foundation for building production-grade monitoring solutions with minimal infrastructure management.
-
-Feel free to fork, customize, or scale it for your own operational use cases!
