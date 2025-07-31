@@ -3,6 +3,22 @@
 This project demonstrates how to build and deploy a ClodWatch Log Monitoring pipeline using AWS services. the pipeline generates and captures logs from a lambda function, stores them in Amazon S3, make queriable with Athena, and send alerts using SNS based on custom thresholds.
 
 ---
+
+## Services and Technologies Used
+
+AWS Lambda – for log generation, transformation, and alerting
+
+Amazon CloudWatch – captures logs from Lambda
+
+Amazon S3 – stores raw log files
+
+AWS Glue – crawler to catalog log files
+
+Amazon Athena – queries logs using SQL
+
+Amazon SNS – sends alerts when error thresholds are exceeded
+
+
 ## Features
 
 - Collects Lambda logs via CloudWatch subscription
