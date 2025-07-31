@@ -166,6 +166,8 @@ Athena stores query outputs in an S3 location:
 
 ---
 
+
+
 ### 7. Create S3 Bucket for Athena Query Results
 
 Create a **separate bucket** that will store Athena's query result files.
@@ -216,22 +218,13 @@ Runs periodic Athena queries to count `ERROR` logs.
 
 This project demonstrates a fully **serverless**, modular log analysis pipeline using AWS services such as Lambda, CloudWatch, S3, Glue, Athena, and SNS.
 
-While the current setup captures logs based on manual invocation (e.g., using the Lambda test button), the architecture is designed to be easily extended into a fully automated, production-ready system. By integrate services like **Amazon EventBridge** or **API Gateway** to trigger log generation and collection automatically.
+While the current setup captures logs based on manual invocation (e.g., using the Lambda test button), the architecture is designed to be easily extended into a fully automated, production-ready system. By integrating services like **Amazon EventBridge** or **API Gateway**, log generation and collection can become event-driven and continuous.
 
-Key strengths of this architecture include:
+The core strengths of this architecture include its serverless nature, structured log storage in S3 with daily partitions, queryable schema via the Glue Data Catalog, and SQL-based log analysis using Amazon Athena. Real-time operational alerts are delivered using SNS, enhancing observability without the need to manage infrastructure.
 
--  Serverless: No infrastructure to manage
--  Structured log storage in S3 with daily partitions
--  Queryable schema via Glue Data Catalog
--  SQL-based insights using Amazon Athena
--  Real-time alerts via Amazon SNS (email/SMS)
-
- Possible Enhancements are,
-- Automate log generation with **EventBridge schedules** or external event triggers
-- Visualize results with tools like **Amazon QuickSight**
-- Extend alerting with **Slack**, **PagerDuty**, or **third-party systems**
-- Ingest logs from multiple Lambda functions or services
-
-This project offers a scalable foundation for building cost-effective and insightful monitoring solutions — with minimal operational overhead.
+This setup can be extended with enhancements such as scheduled log generation using EventBridge, visualizing log data using Amazon QuickSight, integrating alerts with external tools like Slack or PagerDuty, and aggregating logs from multiple Lambda functions or services. Overall, it offers a scalable foundation for building cost-effective and insightful monitoring solutions with minimal operational overhead.
 
 ---
+It serves as a solid foundation for building production-grade monitoring solutions with minimal infrastructure management.
+
+Feel free to fork, customize, or scale it for your own operational use cases!
