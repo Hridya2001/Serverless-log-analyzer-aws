@@ -16,6 +16,22 @@ This project demonstrates how to build and deploy a ClodWatch Log Monitoring pip
 ## Architecture Overview
 ![Architecture Diagram](Daigrams/image.png)
 
+
+---
+##  Project Structure
+
+| Folder/File              | Description                                             |
+|--------------------------|---------------------------------------------------------|
+| `src/`                   | Source code including Lambda functions and SQL queries  |
+| ├── `my_function.py`     | Lambda to generate log messages                         |
+| ├── `log_shipper.py`     | Lambda to decode & push logs to S3                      |
+| ├── `athena_alert_lambda.py` | Lambda to run Athena query & trigger SNS alerts    |
+| └── `queries.sql`        | SQL queries for log analysis in Athena                  |
+| `Diagrams/image.png`     | Architecture diagram for the pipeline                   |
+| `README.md`              | Project documentation and setup guide                   |
+| `.gitattributes`         | Git config for line endings                             |
+| `LICENSE`                | MIT license for open-source use                         |
+
 ## Features
 
 - Collects Lambda logs via CloudWatch subscription
@@ -26,16 +42,6 @@ This project demonstrates how to build and deploy a ClodWatch Log Monitoring pip
 
 ---
 
-##  Project Structure
-
-| Folder        | Description                          |
-|---------------|--------------------------------------|
-| `lambda/`     | Contains log processing Lambda code  |
-| `glue/`       | Glue crawler + job documentation     |
-| `athena/`     | SQL queries for log analysis         |
-| `diagrams/`   | Architecture diagrams                |
-
----
 
 
 ##  Tools & Services Used
