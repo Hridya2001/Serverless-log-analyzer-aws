@@ -100,7 +100,7 @@ Generates dummy logs with different severity levels.
 - Select log group:  
   `/aws/lambda/my-function`
 
----
+
 
 
 ### 3. Create Lambda: `log-shipper.py`
@@ -229,4 +229,5 @@ The core strengths of this architecture include its serverless nature, structure
 
 This setup can be extended with enhancements such as scheduled log generation using EventBridge, visualizing log data using Amazon QuickSight, integrating alerts with external tools like Slack or PagerDuty, and aggregating logs from multiple Lambda functions or services. Overall, it offers a scalable foundation for building cost-effective and insightful monitoring solutions with minimal operational overhead.
 
+---
 ---
