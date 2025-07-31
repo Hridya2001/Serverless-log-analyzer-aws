@@ -20,23 +20,22 @@ Serverless Log Analyzer is a real-time log processing pipeline built using AWS s
 
 ## Project Structure
 
-- `serverless-log-analyzer/`
-  - `lambda/`
-    - `my-function.py` – Generates sample logs
-    - `log-shipper.py` – Sends logs from CloudWatch to S3
-    - `athena_alert_lambda.py` – Queries logs and sends SNS alerts
-  - `athena/`
-    - `athena_queries.sql` – Sample Athena SQL queries
-  - `diagram/`
-    - `image.png` – Architecture diagram
-  - `.gitattributes` – Language overrides for GitHub stats
-  - `README.md` – You are here
+| Folder/File                      | Description                                                   |
+|----------------------------------|---------------------------------------------------------------|
+| `lambda/my-function.py`          | Lambda to generate log messages                               |
+| `lambda/log-shipper.py`          | Lambda to decode & push logs to S3                            |
+| `lambda/athena_alert_lambda.py`  | Lambda to run Athena query & trigger SNS alerts               |
+| `athena/athena_queries.sql`      | SQL queries for log analysis in Athena                        |
+| `diagram/image.png`              | Architecture diagram for the pipeline                         |
+| `README.md`                      | Project documentation and setup guide                         |
+| `.gitattributes`                 | GitHub language stats override config                         |
+| `LICENSE`                        | MIT license for open-source use                               |
 
 ---
 
 ##  Architecture
 
-![Architecture](Diagrams/image.png)
+![Architecture Diagram](Daigrams/image.png)
 
 ---
 
