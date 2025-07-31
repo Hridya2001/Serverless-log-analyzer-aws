@@ -126,3 +126,19 @@ Add **subscription filter** in CloudWatch → Target: `log-shipper`
   ```
 
 ---
+
+
+### 5.  Set Up AWS Glue Crawler
+
+- Source: `s3://log-analyzer-hridya/logs/`
+- Output: Database `log_analysis_db`
+
+#### IAM Role
+
+```json
+{
+  "Effect": "Allow",
+  "Action": ["s3:GetObject", "glue:*"],
+  "Resource": "*"
+}
+```
