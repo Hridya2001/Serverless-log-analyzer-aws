@@ -148,7 +148,13 @@ Add **subscription filter** in CloudWatch → Target: `log-shipper`
 
 ### 6.  Query Using Athena
 
-- Result output location: `s3://log-analyzer-hridya/athena-results/`
+To analyze your logs, open the **Amazon Athena Console**:
+
+-  Go to the [Athena Console](https://console.aws.amazon.com/athena/)
+-  In the **Query Editor**, do the following:
+   - From the left panel, **choose your database**: `log_analysis_db`
+   - Select the table created by Glue (e.g., `logs_json`)
+   - Write and run 
 - You can find sample Athena queries in [`athena_queries.sql`](src/Athena.sql)
 
 
