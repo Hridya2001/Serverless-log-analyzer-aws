@@ -162,8 +162,51 @@ To analyze your logs, open the **Amazon Athena Console**:
 Athena stores query outputs in an S3 location:
 
 - Click the gear icon in the top-right corner of the Athena console
-- Set the **query result location** to `s3://log-analyzer-hridya/athena-results/` 
+- Set the **query result location** to `s3://athena-results/` 
+
+---
+
+### 7. Create S3 Bucket for Athena Query Results
+
+Create a **separate bucket** that will store Athena's query result files.
+
+- **Bucket Name**: `athena-results`
+- **Purpose**: Athena stores output of each SQL query here (CSV/JSON format)
+
+**These results can be useful for:**
+- Debugging
+- Auditing historical log queries
+- Triggering downstream processes (like alerts)
+
+  
+---
 
 
 
+### 8.  Set Up SNS Alerts
 
+- Create Topic: `log-alerts-topic`
+- Subscribe: Email → Confirm in your inbox
+
+---
+
+### 9.  Lambda Alerting Function: `athena_alert_lambda.py`
+
+Runs periodic Athena queries to count `ERROR` logs.
+
+#### IAM Permissions
+
+```json
+{
+  "Effect": "Allow",
+  "Action": [
+    "athena:*",
+    "s3:GetObject",
+    "s3:PutObject",
+    "sns:Publish"
+  ],
+  "Resource": "*"
+}
+```
+
+---
