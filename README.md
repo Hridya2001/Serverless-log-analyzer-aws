@@ -1,7 +1,6 @@
-# Serverless Log Analyzer (AWS)
+# Log Monitoring Pipeline using AWS
 
- A fully serverless log analysis project to collect logs from AWS Lambda, store them in S3, and analyze using Glue + Athena.
-
+This project demonstrates how to build and deploy a CloudWatch Log Monitoring Pipeline using AWS services. The pipeline generates logs from a Lambda function, stores them in Amazon S3, makes them queryable with Athena, and sends alerts using SNS based on custom thresholds.
 ---
 
 ## Features
