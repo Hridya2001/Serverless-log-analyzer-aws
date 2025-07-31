@@ -97,7 +97,26 @@ Generates dummy logs with different severity levels.
 
 ---
 
-### 3.  Create Primary S3 Bucket for Logs
+
+### 3. Create Lambda: `log-shipper.py`
+
+Subscribed to `/aws/lambda/my-function` log group and writes logs to S3.
+
+#### IAM Permissions
+
+```json
+{
+  "Effect": "Allow",
+  "Action": ["s3:PutObject"],
+  "Resource": "arn:aws:s3:::log-analyzer-hridya/*"
+}
+```
+
+Add **subscription filter** in CloudWatch → Target: `log-shipper`
+
+---
+
+### 4.  Create Primary S3 Bucket for Logs
 
 - **Bucket Name**: `log-analyzer-hridya`
 - **Purpose**: Stores logs in structured folders
