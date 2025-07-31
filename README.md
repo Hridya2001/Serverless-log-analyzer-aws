@@ -226,7 +226,7 @@ Key strengths of this architecture include:
 -  SQL-based insights using Amazon Athena
 -  Real-time alerts via Amazon SNS (email/SMS)
 
-###  Possible Enhancements
+ Possible Enhancements are,
 - Automate log generation with **EventBridge schedules** or external event triggers
 - Visualize results with tools like **Amazon QuickSight**
 - Extend alerting with **Slack**, **PagerDuty**, or **third-party systems**
@@ -234,3 +234,4 @@ Key strengths of this architecture include:
 
 This project offers a scalable foundation for building cost-effective and insightful monitoring solutions — with minimal operational overhead.
 
+---
