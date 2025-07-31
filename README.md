@@ -119,7 +119,7 @@ Subscribed to `/aws/lambda/my-function` log group and writes logs to S3.
 
 Add **subscription filter** in CloudWatch → Target: `log-shipper`
 
----
+
 
 ### 4.  Create Primary S3 Bucket for Logs
 
@@ -130,7 +130,7 @@ Add **subscription filter** in CloudWatch → Target: `log-shipper`
   /logs/YYYY/MM/DD/
   ```
 
----
+
 
 
 ### 5.  Set Up AWS Glue Crawler
@@ -148,7 +148,7 @@ Add **subscription filter** in CloudWatch → Target: `log-shipper`
 }
 ```
 
----
+
 
 
 ### 6.  Query Using Athena
@@ -169,7 +169,7 @@ Athena stores query outputs in an S3 location:
 - Click the gear icon in the top-right corner of the Athena console
 - Set the **query result location** to `s3://athena-results/` 
 
----
+
 
 
 
@@ -186,7 +186,7 @@ Create a **separate bucket** that will store Athena's query result files.
 - Triggering downstream processes (like alerts)
 
   
----
+
 
 
 
@@ -195,7 +195,7 @@ Create a **separate bucket** that will store Athena's query result files.
 - Create Topic: `log-alerts-topic`
 - Subscribe: Email → Confirm in your inbox
 
----
+
 
 ### 9.  Lambda Alerting Function: `athena_alert_lambda.py`
 
