@@ -6,7 +6,7 @@ This project demonstrates how to build and deploy a ClodWatch Log Monitoring pip
 
 ## Services and Technologies Used
 
-- AWS Lambda – for log generation, transformation, and alerting
+- *AWS Lambda* – for log generation, transformation, and alerting
 - Amazon CloudWatch – captures logs from Lambda
 - Amazon S3 – stores raw log files
 - AWS Glue – crawler to catalog log files
