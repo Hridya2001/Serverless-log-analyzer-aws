@@ -6,12 +6,12 @@ This project demonstrates how to build and deploy a ClodWatch Log Monitoring pip
 
 ## Services and Technologies Used
 
--*AWS* *Lambda* – for log generation, transformation, and alerting
--Amazon CloudWatch – captures logs from Lambda
--Amazon S3 – stores raw log files
--AWS Glue – crawler to catalog log files
--Amazon Athena – queries logs using SQL
--Amazon SNS – sends alerts when error thresholds are exceeded
+- AWS Lambda – for log generation, transformation, and alerting
+- Amazon CloudWatch – captures logs from Lambda
+- Amazon S3 – stores raw log files
+- AWS Glue – crawler to catalog log files
+- Amazon Athena – queries logs using SQL
+- Amazon SNS – sends alerts when error thresholds are exceeded
 
 ## Features
 
