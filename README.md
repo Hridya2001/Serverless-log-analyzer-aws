@@ -40,7 +40,7 @@ serverless-log-analyzer/
 
 ##  Architecture
 
-![Architecture Diagram](Diagram/image.png)
+![Architecture Diagram](Diagrams/image.png)
 
 ---
 
