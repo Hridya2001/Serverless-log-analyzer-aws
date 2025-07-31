@@ -155,7 +155,7 @@ To analyze your logs, open the **Amazon Athena Console**:
    - From the left panel, **choose your database**: `log_analysis_db`
    - Select the table created by Glue ( `logs_json`)
    - Write and run 
-- You can find sample Athena queries in [`athena_queries.sql`](src/Athena.sql)
+- You can find sample Athena queries [`here`](src/Athena.sql)
 
   
 **Set the Query Result Location**  
@@ -216,7 +216,7 @@ Runs periodic Athena queries to count `ERROR` logs.
 
 This project demonstrates a fully **serverless**, modular log analysis pipeline using AWS services such as Lambda, CloudWatch, S3, Glue, Athena, and SNS.
 
-While the current setup captures logs based on manual invocation (e.g., using the Lambda test button), the architecture is designed to be easily extended into a fully automated, production-ready system. By can integrate services like **Amazon EventBridge** or **API Gateway** to trigger log generation and collection automatically.
+While the current setup captures logs based on manual invocation (e.g., using the Lambda test button), the architecture is designed to be easily extended into a fully automated, production-ready system. By integrate services like **Amazon EventBridge** or **API Gateway** to trigger log generation and collection automatically.
 
 Key strengths of this architecture include:
 
