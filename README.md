@@ -225,7 +225,7 @@ This project demonstrates a fully **serverless**, modular log analysis pipeline 
 
 While the current setup captures logs based on manual invocation (e.g., using the Lambda test button), the architecture is designed to be easily extended into a fully automated, production-ready system. By integrating services like **Amazon EventBridge** or **API Gateway**, log generation and collection can become event-driven and continuous.
 
-The core strengths of this architecture include its serverless nature, structured log storage in S3 with daily partitions, queryable schema via the Glue Data Catalog, and SQL-based log analysis using Amazon Athena. Real-time operational alerts are delivered using SNS, enhancing observability without the need to manage infrastructure.
+The core strengths of this architecture include its serverless nature, structured log storage in S3 with partitions, queryable schema via the Glue Data Catalog, and SQL-based log analysis using Amazon Athena. Real-time operational alerts are delivered using SNS, enhancing observability without the need to manage infrastructure.
 
 This setup can be extended with enhancements such as scheduled log generation using EventBridge, visualizing log data using Amazon QuickSight, integrating alerts with external tools like Slack or PagerDuty, and aggregating logs from multiple Lambda functions or services. Overall, it offers a scalable foundation for building cost-effective and insightful monitoring solutions with minimal operational overhead.
 
